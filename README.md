@@ -1,2 +1,2 @@
 # Entrospect
-Official Python implementation of the paper \textit{Entrospect: Information Theoretic Self-Reflection Elicits Better Self-Correction of Language Models}
+Official Python implementation of the paper _Entrospect: Information Theoretic Self-Reflection Elicits Better Self-Correction of Language Model_
