@@ -3,11 +3,11 @@ Official Python implementation of the paper _Entrospect: Information Theoretic S
 
 ## The Pipeline Visualized
 
-<center>
-  [The pipeline of our Entrospect prompt-driven framework, extending the original Self-Refine structure with an **Optimal Reflective Pattern Selector (ORPS)** and a universal **semantic similarity-based stopping condition**. The framework requires no supervised pre-training or access to the model's internal parameters, granting it to be generalizable to various language models and reasoning tasks.](https://github.com/user-attachments/assets/9a858a53-c83d-42f0-9fcf-f6d172bc5ef4)
-</center>
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/9a858a53-c83d-42f0-9fcf-f6d172bc5ef4" alt="The pipeline of our Entrospect prompt-driven framework, extending the original Self-Refine structure with an **Optimal Reflective Pattern Selector (ORPS)** and a universal **semantic similarity-based stopping condition**. The framework requires no supervised pre-training or access to the model's internal parameters, granting it to be generalizable to various language models and reasoning tasks." width="300">
+</div>
 
-
+The pipeline of our Entrospect prompt-driven framework, extending the original Self-Refine structure with an **Optimal Reflective Pattern Selector (ORPS)** and a universal **semantic similarity-based stopping condition**. The framework requires no supervised pre-training or access to the model's internal parameters, granting it to be generalizable to various language models and reasoning tasks.
 
 ## How It Differs from Self-Refine, Its Predecessor
 
