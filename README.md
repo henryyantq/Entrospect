@@ -3,13 +3,13 @@ Official Python implementation of the paper _Entrospect: Information Theoretic S
 
 ## The Pipeline Visualized
 
-<img width="857" alt="image" src="https://github.com/user-attachments/assets/9a858a53-c83d-42f0-9fcf-f6d172bc5ef4" />
+<center><img width="857" alt="image" src="https://github.com/user-attachments/assets/9a858a53-c83d-42f0-9fcf-f6d172bc5ef4" /></center>
 
 The pipeline of our Entrospect prompt-driven framework, extending the original Self-Refine structure with an **Optimal Reflective Pattern Selector (ORPS)** and a universal **semantic similarity-based stopping condition**. The framework requires no supervised pre-training or access to the model's internal parameters, granting it to be generalizable to various language models and reasoning tasks.
 
 ## How It Differs from Self-Refine, Its Predecessor
 
-<img width="410" alt="image" src="https://github.com/user-attachments/assets/a2345206-3b04-4519-ad77-11498726136c" />
+<center><img width="410" alt="image" src="https://github.com/user-attachments/assets/a2345206-3b04-4519-ad77-11498726136c" /></center>
 
 The single-round refinement of an initial response for the same query, comparing Self-Refine and our proposed _Entrospect_. Self-Refine fully relies on the model's self-reflected feedback, where any biases introduced during self-reflection are directly carried over into the refinement stage, hindering constructive improvements. On the other hand, our Entrospect identifies the optimal revision suggestion from an itemized ouput of the self-reflection, enabling Entrospect to achieve more robust and reliable response refinement.
 
