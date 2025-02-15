@@ -22,5 +22,5 @@ The single-round refinement of an initial response for the same query, comparing
 2. Install essential python dependencies by running ```pip install --no-cache-dir transformers einops numpy<2```.
 3. The default demo comes with [_Qwen 2.5 7B Instruct (4bit GPTQ quantized)_](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-GPTQ-Int4), which relies on ```pip install --no-cache-dir optimum>=1.20.0``` and [AutoGPTQ](https://github.com/AutoGPTQ/AutoGPTQ).
 
-## Run the Math Reasoning Demo
+## Run the Demo
 Simply run ```python main.py``` after all the required dependencies are adequately deployed for your Python environment. You can also specify your own query or toggle the hallucination detection-specific instructions in the [**main.py**](https://github.com/henryyantq/Entrospect/blob/main/main.py) file following the guidance of dedicated comments. **Notably, the default demo setting requires approximately 10.5GB of storage (1x language model + 1x [embedding model](https://huggingface.co/jinaai/jina-embeddings-v3) for long-text semantic similarity calculation).**
