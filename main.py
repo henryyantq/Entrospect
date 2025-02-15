@@ -86,6 +86,7 @@ def entrospect(
         prev_best_mi = initial_mi
         n_search += 1
         inst = f"[Problem]\n{query}\n\n[Solution]\n{prev_rsp}\n\nPlease analyze the above solution to the given math problem. Your task is to identify any deficiencies or errors in the solution. Please follow these steps:\n\n1. **Understand the Problem**: Carefully read and comprehend the math problem to grasp what is being asked.\n2. **Review the Solution**: Examine the provided solution step by step.\n3. **Identify Deficiencies**: Look for errors in calculations, logical reasoning, or assumptions. Note any steps that are missing, incorrect, or insufficiently justified.\n4. **Assess Clarity and Completeness**: Evaluate the explanation for clarity and whether it fully addresses the problem."
+        # inst = f"[Task]\n{query}\n\n[Assessment]\n{rsp}\n\nAnalyze the assessment result of whether the provided answer correctly addresses the query based on the given passage. Identify any potential inaccuracies, logical gaps, or areas where the reasoning could be improved. Provide a list of specific optimization suggestions to enhance your judgment, ensuring that your evaluation is thorough and accurate." (For Hallucination Detection)
         rsp_d = chat_hf(model, tokenizer, inst)
         inst = f"Format all independent revision suggestions that can be extracted from the following in a **Python List of Strings**:\n{rsp_d}"
         print(f">>> Iter {n_search} - Reflecting... <<<")
@@ -97,6 +98,7 @@ def entrospect(
         print(f">>> Iter {n_search} - Conducting ORPS... <<<")
         for i in range(len(rsp_d)):
             q = f"[Problem]\n{query}\n\n[Solution]\n{prev_rsp}\n\nPlease provide a refined solution for the problem given the previous solution."
+            # q = f"[Task]\n{query}\n\n[Assessment]\n{prev_rsp}\n\nPlease re-check your previous assessment and provide your final decision referring to the suggestion:\n{rsp_d}"  (For Hallucination Detection)
             mi = mutual_info(model, tokenizer, q, rsp_d[i])
             if mi >= prev_best_mi:
                 flag = 1
