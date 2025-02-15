@@ -1,7 +1,7 @@
 # Entrospect
 Official Python implementation of the paper _Entrospect: Information Theoretic Self-Reflection Elicits Better Self-Correction of Language Model_
 
-![fig_main](https://github.com/user-attachments/assets/8cc0e646-172f-4d76-adba-80e8108678cc)
+<img width="857" alt="image" src="https://github.com/user-attachments/assets/9a858a53-c83d-42f0-9fcf-f6d172bc5ef4" />
 
 ## Prerequisites
 1. Install PyTorch from [the official website](https://pytorch.org/get-started/previous-versions/).
