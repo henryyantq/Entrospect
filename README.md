@@ -1,5 +1,5 @@
 # Entrospect
-Official Python implementation of the paper _Entrospect: Information Theoretic Self-Reflection Elicits Better Self-Correction of Language Model_
+Official Python implementation of the paper _Entrospect: Information Theoretic Self-Reflection Elicits Better Self-Correction of Small Language Model_
 
 ## The Pipeline Visualized
 
