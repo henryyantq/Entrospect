@@ -1,4 +1,7 @@
 # Entrospect
+
+**NOTE**: The only officially recognized contributors of this project are _Tianqiang Yan_ (myself), _Yuan Gao_ (corresponding author), _Lin Zhang_, _Lizhen Qu_, and _Ziqiao Lin_. All other names listed as authors were added **under coercion**. We issue this declaration in the interest of fairness and transparency.
+
 Official Python implementation of the paper _Entrospect: Information Theoretic Self-Reflection Elicits Better Self-Correction of Small Language Model_
 
 ## The Pipeline Visualized
